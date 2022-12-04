@@ -1,0 +1,25 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "express-validator": "^6.14.2",
+    "json-server": "^0.17.1",
+    "pg": "^8.8.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.4.4",
+    "sequelize": "^6.25.7",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
+  }
+}
