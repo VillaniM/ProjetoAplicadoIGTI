@@ -1,0 +1,44 @@
+.form{
+    width: 500px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: #e6e6ed;
+    border-radius: 15px 15px;
+}
+
+.form label{
+    color: #05010f;
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+.form p{
+    color: #7b7b7b;
+}
+
+.form ul{
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.form li{
+    list-style: none;
+    padding-top: 1em;
+}
+
+.header{
+    list-style: none;
+}
+
+.header h1{
+    font-size: 1.5em;
+    color: #091a6c;
+    margin: 0.67em;
+    text-align: center;
+}
+
+.form h1{
+    list-style: none;
+    border-bottom: 1px solid;
+    border-color: #d7d8e1;
+}

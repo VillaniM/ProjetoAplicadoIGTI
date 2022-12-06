@@ -1,12 +1,10 @@
-import './index.css';
+import Form from './components/form/Form'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        oi mazinha
-      </header>
-    </div>
+    <Form />
   );
 }
 
