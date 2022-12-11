@@ -1,12 +1,12 @@
 import requestService from "../services/request.service.js";
-import { getRole } from "./auth.controller.js";
+//import { getRole } from "./auth.controller.js";
 
 async function createRequest(req, res, next){
     try{
         let request = req.body;
-        if(!request.nameHol || !request.mailHol || !request.cpfHol || !request.docHol){
+        if(!request.nameHol || !request.mailHol || !request.cpfHol){
 
-            throw new Error("Nome, Email, CPF e Documento são Obrigatórios");
+            throw new Error("Nome, Email e CPF são Obrigatórios");
         }
         
         res.send(await requestService.createRequest(request));

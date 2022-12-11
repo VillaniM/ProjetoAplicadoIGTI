@@ -7,12 +7,13 @@ import Submit from './Submit'
 import TextArea from './TextArea'
 
 function createPost(formReq){
+
     fetch('http://localhost:8080/request', {
-        metod: 'POST',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formReq.data),
+        body: JSON.stringify(formReq),
      })
         .then((resp) => resp.json())
         .then((data) =>{
@@ -21,7 +22,6 @@ function createPost(formReq){
   
         })
         .catch(err => console.log(err))
-    
   }
 
 function Form(){
@@ -29,6 +29,7 @@ function Form(){
 
     const submit = (e) => {
         e.preventDefault()
+        console.log(formReq)
         createPost(formReq)
     }
 
@@ -117,8 +118,9 @@ function Form(){
                     <Select 
                         name='typeReq'
                         text='Tipo de Solicitação'
-                        value='0'
                         handleOnChange={handleChange}
+                        value={formReq.typeReq}
+                        
                     />           
                     <TextArea 
                         name='obs'

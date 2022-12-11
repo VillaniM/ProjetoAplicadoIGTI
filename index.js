@@ -6,13 +6,13 @@ import cors from "cors";
 //winston para geração de logs
 import winston from "winston";
 //Autenticação e Autorização
-import basicAuth from "express-basic-auth"
+///import basicAuth from "express-basic-auth"
 
 //rotas da API - nesse caso está fazendo referências as tabelas do banco
 import requestsRouter from "./routes/request.route.js";
 
 //import do auth controller para autenticação e autorização
-import {authorize, authorizer} from "./controllers/auth.controller.js"
+//import {authorize, authorizer} from "./controllers/auth.controller.js"
 
 //import sequelize from "./repositories/db.js";
 
@@ -41,7 +41,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use(basicAuth({authorizeAsync: true, authorizer}));
+//app.use(basicAuth({authorizeAsync: true, authorizer}));
 
 //a função authorize funciona como um Middleware de autenticação,
 //se ela estiver ok retorna um next e pula para a autoresRouter

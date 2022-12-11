@@ -26,39 +26,39 @@ const Request = db.define("requests", {
     },
     nameHol: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     },
     mailHol: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     },
     cpfHol: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     },
     docHol: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     },
     typeReq: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     },
     noteHol: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     },
     status: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     }, 
     date: {
         type: Sequelize.DATE,
-        allowNull: false
+        allowNull: true
     },
     noteReq: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     }
 }, {underscored: true}); //o underscored transforma as palavras adicionando underline. Ex: clientId vira client_id
 
