@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import styles from './Form.module.css'
 import Input from './Input'
 import Radio from './Radio.js'
@@ -6,35 +6,16 @@ import Select from './Select'
 import Submit from './Submit'
 import TextArea from './TextArea'
 
-function createPost(formReq){
-
-    fetch('http://localhost:8080/request', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formReq),
-     })
-        .then((resp) => resp.json())
-        .then((data) =>{
-            const result = JSON.parse('');
-            console.log(result);
-  
-        })
-        .catch(err => console.log(err))
-  }
-
-function Form(){
-    const [formReq, setFormReq] = useState({})
+function Form({handleSubmit}){
+    const [formReq, setFormReq] = useState([])
 
     const submit = (e) => {
-        e.preventDefault()
-        console.log(formReq)
-        createPost(formReq)
+        e.preventDefault() //não deixa atualizar a página quando clica no botão
+        handleSubmit(formReq)
     }
 
     function handleChange(e) {
-        setFormReq({...formReq, [e.target.name]:e.target.value})
+        setFormReq({...formReq, [e.target.name]:e.target.value}) //recupera as alterações dos campos input
     }
 
     return (
@@ -63,7 +44,7 @@ function Form(){
                         name='nameRep' 
                         placeholder='Nome Completo'
                         handleOnChange={handleChange}
-                        value={formReq.nameRep}
+                        value={formReq.nameRep ? formReq.nameRep : ''}
                     />
                     <Input 
                         type='text' 
@@ -71,7 +52,7 @@ function Form(){
                         name='cpfRep' 
                         placeholder=''
                         handleOnChange={handleChange}
-                        value={formReq.cpfRep}
+                        value={formReq.cpfRep ? formReq.cpfRep : ''}
                     />
                     <Input 
                         type='text' 
@@ -79,7 +60,7 @@ function Form(){
                         name='mailRep' 
                         placeholder=''
                         handleOnChange={handleChange}
-                        value={formReq.mailRep}
+                        value={formReq.mailRep ? formReq.mailRep : ''}
                     />
                     <Input 
                         type='file'
@@ -92,7 +73,7 @@ function Form(){
                         name='nameHol' 
                         placeholder='Nome Completo'
                         handleOnChange={handleChange}
-                        value={formReq.nameHol}
+                        value={formReq.nameHol ? formReq.nameHol : ''}
                     />
                     <Input 
                         type='text' 
@@ -100,7 +81,7 @@ function Form(){
                         name='cpfHol' 
                         placeholder=''
                         handleOnChange={handleChange}
-                        value={formReq.cpfHol}
+                        value={formReq.cpfHol ? formReq.cpfHol : ''}
                     />
                     <Input 
                         type='text' 
@@ -108,7 +89,7 @@ function Form(){
                         name='mailHol' 
                         placeholder=''
                         handleOnChange={handleChange}
-                        value={formReq.mailHol}
+                        value={formReq.mailHol ? formReq.mailHol : ''}
                     />
                     <Input 
                         type='file' 
@@ -119,16 +100,16 @@ function Form(){
                         name='typeReq'
                         text='Tipo de Solicitação'
                         handleOnChange={handleChange}
-                        value={formReq.typeReq}
+                        value={formReq.typeReq ? formReq.typeReq : ''}
                         
                     />           
                     <TextArea 
                         name='obs'
                         text='Observações'
                         handleOnChange={handleChange}
-                        value={formReq.obs}
+                        value={formReq.obs ? formReq.obs : ''}
                     />
-                    <Submit handleSubmit={createPost} text='Enviar'/>
+                    <Submit text='Enviar'/>
                 </ul>
             </form>
         </div>
