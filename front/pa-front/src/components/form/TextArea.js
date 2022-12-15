@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './TextArea.module.css'
 
 function TextArea({text, name, handleOnChange, value}){

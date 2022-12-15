@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Submit.module.css'
 
 function Submit({text}){

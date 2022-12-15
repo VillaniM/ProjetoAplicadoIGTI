@@ -39,3 +39,38 @@
 2022-12-11T18:26:51.550Z [P.A] info POST / Request - {"nameHol":"Marcela","mailHol":"@hotmail.com","cpfHol":"12344","docHol":"","typeReq":"1","noteHol":"","status":"","noteReq":""}
 2022-12-11T18:27:10.448Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste","typeReq":"3"}
 2022-12-11T18:27:23.738Z [P.A] info POST / Request - {"nameHol":"Marcela","mailHol":"@hotmail.com","cpfHol":"12344","docHol":"","typeReq":"1","noteHol":"","status":"","noteReq":""}
+2022-12-13T04:53:35.104Z [P.A] info GET /request
+2022-12-13T04:53:55.833Z [P.A] info DELETE /request
+2022-12-13T04:54:00.974Z [P.A] info DELETE /request
+2022-12-13T04:54:05.639Z [P.A] info DELETE /request
+2022-12-13T04:54:09.450Z [P.A] info GET /request
+2022-12-13T04:54:10.197Z [P.A] info DELETE /request
+2022-12-13T04:54:13.798Z [P.A] info DELETE /request
+2022-12-13T04:54:17.578Z [P.A] info DELETE /request
+2022-12-13T04:54:23.349Z [P.A] info DELETE /request
+2022-12-13T04:54:28.119Z [P.A] info DELETE /request
+2022-12-13T04:54:32.880Z [P.A] info GET /request
+2022-12-13T04:55:03.190Z [P.A] info GET /request
+2022-12-13T05:14:04.076Z [P.A] info GET /request
+2022-12-13T05:14:35.421Z [P.A] info GET /request
+2022-12-13T06:51:44.972Z [P.A] info GET /request
+2022-12-13T06:52:18.845Z [P.A] info GET /request
+2022-12-13T07:13:03.776Z [P.A] info GET /request
+2022-12-13T07:13:05.469Z [P.A] info GET /request
+2022-12-13T07:13:11.814Z [P.A] info POST / Request - {"nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste","typeReq":"2"}
+2022-12-13T07:13:33.007Z [P.A] info POST / Request - {"nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste","typeReq":"2"}
+2022-12-13T07:14:12.911Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","cpfHol":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","typeReq":"2"}
+2022-12-13T07:14:28.440Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","cpfHol":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","typeReq":"2"}
+2022-12-13T07:14:31.074Z [P.A] info GET /request
+2022-12-13T07:23:59.562Z [P.A] info GET /request
+2022-12-13T07:24:05.181Z [P.A] info GET /request
+2022-12-13T07:24:29.203Z [P.A] info GET /request
+2022-12-13T07:33:11.201Z [P.A] info GET /request
+2022-12-13T07:33:14.636Z [P.A] info GET /request
+2022-12-13T07:33:23.742Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste","typeReq":"2"}
+2022-12-13T07:33:37.907Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste","typeReq":"2"}
+2022-12-13T07:33:41.555Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste","typeReq":"2"}
+2022-12-13T07:33:45.648Z [P.A] info GET /request
+2022-12-13T07:34:05.163Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste000000000000000000","typeReq":"2"}
+2022-12-13T07:34:06.027Z [P.A] info POST / Request - {"nameRep":"Marcela Silva Villani","mailRep":"marcelavillani_@hotmail.com","cpfRep":"teste","nameHol":"Marcela Silva Villani","mailHol":"marcelavillani_@hotmail.com","cpfHol":"teste000000000000000000","typeReq":"2"}
+2022-12-13T07:34:10.835Z [P.A] info GET /request

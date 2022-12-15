@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Radio.module.css'
 
 function Radio({ value, setGender }){
