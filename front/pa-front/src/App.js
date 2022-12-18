@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import Form from './components/form/Form'
 import Confirm from './components/form/Confirm'
+import RequestControl from './components/manager/RequestControl';
 
 function CreatePost(formReq){
 
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route exact path='/confirm' element={<Confirm />} />
         <Route exact path='/' element={<Form handleSubmit={CreatePost}/>} />
+        <Route exact path='/request' element={<RequestControl />} />
       </Routes>
     </Router>
     //<Form handleSubmit={CreatePost}/>
